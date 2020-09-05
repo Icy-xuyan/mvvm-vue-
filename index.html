@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title></head
+  >ddd
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-</head>
-
-<body>
-  <div id="app">
-    <p v-text="msg" title="text指令"></p>
-    <p v-html="msg" title="html指令"></p>
-    <p>{{car.name}}</p>
-    <input type="text" v-model="msg">
-    <button v-on:click="fn">按钮</button>
-  </div>
-</body>
-<script src="./src/watcher.js"></script>
-<script src="./src/observe.js"></script>
-<script src="./src/compile.js"></script>
-<script src="./src/vue.js"></script>
-<script>
-  const vm = new Vue({
-    el: "#app",
-    data: {
-      msg: "hello vue~",
-      tag: "<h2>哈哈哈</h2>",
-      car: {
-        name: "摩拜单车",
-        color: "yellow",
+  <body>
+    <div id="app">
+      <p v-text="msg" title="text指令"></p>
+      <p v-html="msg" title="html指令"></p>
+      <p>{{car.name}}</p>
+      <input type="text" v-model="msg" />
+      <button v-on:click="fn">按钮</button>
+    </div>
+  </body>
+  <script src="./src/watcher.js"></script>
+  <script src="./src/observe.js"></script>
+  <script src="./src/compile.js"></script>
+  <script src="./src/vue.js"></script>
+  <script>
+    const vm = new Vue({
+      el: "#app",
+      data: {
+        msg: "hello vue~",
+        tag: "<h2>哈哈哈</h2>",
+        car: {
+          name: "摩拜单车",
+          color: "yellow",
+        },
       },
-    },
-    methods: {
-      fn() {
-        this.msg = "css很菜";
+      methods: {
+        fn() {
+          this.msg = "css很菜";
+        },
       },
-    },
-  });
-  // console.log(vm);
-</script>
-
+    });
+    // console.log(vm);
+  </script>
 </html>
