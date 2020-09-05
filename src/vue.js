@@ -1,4 +1,4 @@
-// 实现一个类，用来创建vue实例
+// 实现一个类，用来创建vue实例0000
 class Vue {
   constructor(options = {}) {
     // 给vue实例添加属性
