@@ -1,7 +1,7 @@
 /**
  * 编译模板的类1111
  * 参数1 el 模板选择器或者模板dom
- * 参数2 vm vue实例
+ * 参数2 vm vue实例88888
  */
 class Compile {
   constructor(el, vm) {
